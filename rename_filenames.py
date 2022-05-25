@@ -27,10 +27,12 @@ for subdir, dirs, files in os.walk(directory):
     files = [f for f in files if not f[0] == '.']
     dirs[:] = [d for d in dirs if not d[0] == '.']     # use files and dirs 
     for filename in files:
-        subdirectoryPath = os.path.relpath(subdir, directory) #get the path to your subdirectory
+        
+        subdirectoryPath = os.path.join(directory, subdir) #get the path to your subdirectory
         filePath = os.path.join(subdirectoryPath, filename) #get the path to your file
-        newFilePath = filePath.replace(".jpg",".jpeg") #create the new name
-        print (filePath)
-        print (slugify(filePath))
-        #os.rename(filePath, newFilePath) #rename your file
+        if filePath[0] != ".":
+            if filePath != slugify(filePath):
+                print (slugify(filePath))
+                print (os.path.isfile(filePath))
+            os.rename(filePath, slugify(filePath)) #rename your file
         
