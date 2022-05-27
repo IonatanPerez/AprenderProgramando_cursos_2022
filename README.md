@@ -5,4 +5,4 @@ La idea es este git es compartir la información de los cursos aprender programa
 
 # Lista de datasets
 
-[Pokemon](https://downgit.github.io/#/home?url=https://github.com/IonatanPerez/AprenderProgramando_cursos_2022/blob/main/Notebooks/Ejemplos y actividades/datasets/pokemon.csv)
+![Pokemon](https://downgit.github.io/#/home?url=https://github.com/IonatanPerez/AprenderProgramando_cursos_2022/blob/main/Notebooks/Ejemplos y actividades/datasets/pokemon.csv)
